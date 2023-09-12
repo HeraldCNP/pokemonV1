@@ -1,0 +1,7 @@
+<h3>Agregar Pokemon</h3>
+<form  class="row" [formGroup]="formPoke" (ngSubmit)="addPokemon(formPoke.value)">
+  <input type="text" formControlName="name" class="form-control mb-2">
+  <input type="submit" class="btn btn-primary" value="Registrar">
+</form>
+
+{{ formPoke.value | json }}

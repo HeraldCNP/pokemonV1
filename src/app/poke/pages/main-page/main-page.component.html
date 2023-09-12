@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Pokemones</h1>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <app-list
+        [pokemonList]="pokemons"
+        (onDelete)="onDeletePokemon($event)"></app-list>
+    </div>
+    <div class="col">
+      <app-add-poke (onNewPokemon)="onNewPokemon($event)" ></app-add-poke>
+    </div>
+  </div>
+</div>
